@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 var client_id = 'afRq5keZDhlJRnL3NrY0';
-var client_secret = 'eiwMwJVYbF';
+var client_secret = '';
 var state = "RAMDOM_STATE";
 var redirectURI = encodeURI("http://127.0.0.1:3000/callback/naver");
 var api_url = "";
