@@ -53,7 +53,7 @@ regbtn.addEventListener('click', async ()=> {
     const name = document.querySelector('#name');
     const email = document.querySelector('#email');
 
-    const res = await fetch('http://127.0.0.1:8010/users',
+    const res = await fetch('http://43.203.121.72:8010/users',
         {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -79,7 +79,7 @@ loginbtn.addEventListener('click', async ()=> {
 
     const userid = document.querySelector('#uid');
     const passwd = document.querySelector('#pwd');
-    const res = await fetch('http://127.0.0.1:8010/login',
+    const res = await fetch('http://43.203.121.72:8010/login',
         {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 
 from api.models.user import Base
 
-db_url = 'sqlite:///user.db'
+db_url = 'sqlite:///users.db'
 
 engine = sqlalchemy.create_engine(db_url, echo=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

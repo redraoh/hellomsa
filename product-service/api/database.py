@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from api.models.product import Base
 
 
-db_url = 'sqlite:///product.db'
+db_url = 'sqlite:///products.db'
 
 engine = sqlalchemy.create_engine(db_url, echo=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
