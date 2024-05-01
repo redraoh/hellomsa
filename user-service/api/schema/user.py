@@ -9,6 +9,9 @@ class UserBase(BaseModel):
     name: str
     email: str
 
+    class Config:
+        from_attributes=True
+
 class UserLogin(BaseModel):
     userid: str
     passwd: str
@@ -21,8 +24,6 @@ class User(UserBase):
     #regdate: datetime
     regdate: str
 
-    class Config:
-        from_attributes=True
 
 
 class Token(BaseModel):
